@@ -80,17 +80,9 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-linux"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    }
   ],
   display: true
 };
@@ -193,7 +185,7 @@ const bigProjects = {
   subtitle: "startups et entreprises que j'ai aidées à développer leur technologie",
   projects: [
     {
-      image: require("./assets/images/roboticsLogo.png"), // remplace par un logo ou image pertinente
+      image: require("./assets/images/roboticsLogo.png"),
       projectName: "Développement de Fonctionnalités pour un Robot - Coupe de France de Robotique",
       projectDesc: `
         • Conception d'un robot autonome en Python avec détection d'objets utilisant OpenCV et caméra OAK-D Lite.
@@ -203,7 +195,7 @@ const bigProjects = {
       footerLink: []
     },
     {
-      image: require("./assets/images/avignonLogo.png"), // image à remplacer
+      image: require("./assets/images/avignonLogo.png"),
       projectName: "Détection de fake news par machine learning - Avignon Université",
       projectDesc: `
         • Modèle ML en Python pour classifier articles vrais/faux via NLP.
@@ -214,12 +206,37 @@ const bigProjects = {
       footerLink: []
     },
     {
-      image: require("./assets/images/personalProjectLogo.png"), // image perso
+      image: require("./assets/images/personalProjectLogo.png"),
       projectName: "Système de surveillance intelligente pour la détection pré-accident - Projet Personnel",
       projectDesc: `
         • Système d'analyse vidéo en Python pour prédire comportements à risque avant accident.
         • Détection d'objets sur vidéo avec modèles deep learning TensorFlow & PyTorch.
         • Analyse comportementale par ML avec Scikit-learn pour prédire actions dangereuses.
+      `,
+      footerLink: []
+    },
+
+    /* --- Ajout des 2 nouveaux projets --- */
+
+    {
+      image: require("./assets/images/aiCandidatureAnalyzer.png"),
+      projectName: "AI Candidature Analyzer",
+      projectDesc: `
+        • Extraction automatique des e-mails de candidature via IMAP et intégration dans Make pour centraliser les données.
+        • Utilisation d’un modèle NLP (Hugging Face) pour analyser et classer les candidatures par domaine et entreprise.
+        • Mise à jour dynamique d’un tableau Google Sheets ou Notion avec alertes hebdomadaires.
+        • Résultat : programme fonctionnel pour le suivi et l’analyse des candidatures, automatisation partielle.
+      `,
+      footerLink: []
+    },
+    {
+      image: require("./assets/images/perticodeLogo.png"),
+      projectName: "Perti’Code – Projet CREN – LIUM / Centre Hospitalier du Mans – 2025/2026",
+      projectDesc: `
+        • Amélioration du démonstrateur pour une meilleure précision des recommandations médicales.
+        • Développement de nouvelles fonctionnalités : tests automatisés, gestion des accès utilisateurs et base de données.
+        • Génération d’ordonnances médicales réalistes via analyse de corpus et simulation d’échantillons.
+        • Mise en place d’un protocole expérimental pour analyser l’alignement et l’acceptabilité des outputs.
       `,
       footerLink: []
     }
